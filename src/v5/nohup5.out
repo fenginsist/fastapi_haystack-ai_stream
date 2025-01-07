@@ -1,0 +1,498 @@
+INFO:     Will watch for changes in these directories: ['/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/src/v5']
+INFO:     Uvicorn running on http://0.0.0.0:8005 (Press CTRL+C to quit)
+INFO:     Started reloader process [83316] using WatchFiles
+未改变前 sys.path: ['/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/src/v5', '/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/bin', '/Users/alsc/anaconda3/lib/python311.zip', '/Users/alsc/anaconda3/lib/python3.11', '/Users/alsc/anaconda3/lib/python3.11/lib-dynload', '/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages']
+project_root: /Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream
+改变后 sys.path: ['/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/src/v5', '/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/bin', '/Users/alsc/anaconda3/lib/python311.zip', '/Users/alsc/anaconda3/lib/python3.11', '/Users/alsc/anaconda3/lib/python3.11/lib-dynload', '/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages', '/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream']
+document size: 3
+All documents were successfully written to the document store.
+INFO:     Started server process [83323]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+query: 用1000字夸一下冯凡利的女朋友陈思，夸的漂亮、能力强、人品好等等，目前还没结婚
+top_k: 3
+rag 流式返回接口
+INFO:     127.0.0.1:55879 - "GET /query-stream?query=%E7%94%A81000%E5%AD%97%E5%A4%B8%E4%B8%80%E4%B8%8B%E5%86%AF%E5%87%A1%E5%88%A9%E7%9A%84%E5%A5%B3%E6%9C%8B%E5%8F%8B%E9%99%88%E6%80%9D%EF%BC%8C%E5%A4%B8%E7%9A%84%E6%BC%82%E4%BA%AE%E3%80%81%E8%83%BD%E5%8A%9B%E5%BC%BA%E3%80%81%E4%BA%BA%E5%93%81%E5%A5%BD%E7%AD%89%E7%AD%89%EF%BC%8C%E7%9B%AE%E5%89%8D%E8%BF%98%E6%B2%A1%E7%BB%93%E5%A9%9A HTTP/1.1" 200 OK
+documents size:  0
+--------- all prompt:----------:
+ 用1000字夸一下冯凡利的女朋友陈思，夸的漂亮、能力强、人品好等等，目前还没结婚
+亲爱的同学们-------------:亲爱的-------------:同学们，今天我要向大家介绍一位非常-------------:，-------------:今天-------------:我要-------------:向大家-------------:介绍-------------:一位-------------:非常优秀、美丽、-------------:优秀-------------:、-------------:美丽-------------:、善良的女孩——冯凡利的女朋友-------------:善良-------------:的女孩-------------:——-------------:冯-------------:凡-------------:利的-------------:女朋友陈思。她不仅-------------:陈-------------:思-------------:。-------------:她-------------:不仅拥有令人羡慕的美丽外表-------------:拥有-------------:令人-------------:羡慕-------------:的-------------:美丽-------------:外表，更具备出色的能力-------------:，-------------:更-------------:具备-------------:出色的-------------:能力、高尚的人品和积极-------------:、-------------:高尚-------------:的人-------------:品-------------:和-------------:积极的生活态度。-------------:的生活-------------:态度-------------:。今天，就让我带领大家-------------:今天-------------:，-------------:就-------------:让我-------------:带领-------------:大家一起来领略陈思的独特-------------:一起来-------------:领略-------------:陈-------------:思-------------:的独特魅力。
+
+首先，让我们-------------:魅力谈谈-------------:。
+
+首先-------------:，-------------:让我们-------------:谈谈陈思的美丽。她拥有-------------:陈-------------:思-------------:的-------------:美丽-------------:。-------------:她-------------:拥有优雅的气质，宛如春天的阳光-------------:优雅-------------:的气质-------------:，-------------:宛如-------------:春天的-------------:阳光，温暖人心。-------------:，-------------:温暖-------------:人心-------------:。她的五官精致，眉-------------:她的-------------:五官-------------:精致-------------:，-------------:眉眼如画，笑容甜美，-------------:眼-------------:如-------------:画-------------:，-------------:笑容-------------:甜美-------------:，让人忍不住想多看-------------:让人-------------:忍不住-------------:想-------------:多-------------:看一眼-------------:一眼。陈思的-------------:。-------------:陈-------------:思-------------:的美丽并非仅仅停留在外表-------------:美丽-------------:并非-------------:仅仅-------------:停留-------------:在外-------------:表，她的内涵更是让人敬佩-------------:，-------------:她的-------------:内涵-------------:更是-------------:让人-------------:敬佩。她热爱-------------:。-------------:她-------------:热爱阅读，知识渊博-------------:阅读-------------:，-------------:知识-------------:渊-------------:博，谈吐得体，总能-------------:，-------------:谈-------------:吐-------------:得-------------:体-------------:，-------------:总能给人留下深刻的印象。
+
+其次-------------:给人-------------:留下-------------:深刻的-------------:印象-------------:。
+
+其次，陈思在事业上表现出了-------------:，-------------:陈-------------:思-------------:在-------------:事业上-------------:表现-------------:出了非凡的能力。她勤奋-------------:非凡-------------:的能力-------------:。-------------:她-------------:勤奋刻苦，积极进取，无论在学习-------------:刻苦-------------:，-------------:积极-------------:进取-------------:，-------------:无论-------------:在学习还是工作中都取得了优异的成绩-------------:还是-------------:工作中-------------:都-------------:取得了-------------:优异-------------:的成绩。她具备较强的组织协调能力和-------------:。-------------:她-------------:具备-------------:较强的-------------:组织-------------:协调-------------:能力和团队协作精神，总能-------------:团队-------------:协作-------------:精神-------------:，-------------:总能迅速-------------:迅速融入各种环境，成为团队-------------:融入-------------:各种-------------:环境-------------:，-------------:成为-------------:团队中的佼佼-------------:中的-------------:佼-------------:佼者。在陈思的带领下，团队-------------:者-------------:。-------------:在-------------:陈-------------:思-------------:的-------------:带领下-------------:，-------------:团队氛围和谐，工作效率显著-------------:氛围-------------:和谐-------------:，-------------:工作效率-------------:显著提高。她用实力证明-------------:提高-------------:。-------------:她-------------:用-------------:实力-------------:证明了自己，赢得了同事和领导的-------------:了自己-------------:，-------------:赢得了-------------:同事-------------:和-------------:领导的赞誉-------------:赞誉。
+
+再者，陈思的人品堪称楷模-------------:。
+
+再者-------------:，-------------:陈-------------:思-------------:的人-------------:品-------------:堪称-------------:楷-------------:模。她诚实守信，待人-------------:。-------------:她-------------:诚实-------------:守信-------------:，-------------:待人真诚，关心他人，乐于-------------:真诚-------------:，-------------:关心-------------:他人-------------:，-------------:乐于助-------------:助人。在日常生活中，-------------:人-------------:。-------------:在-------------:日常生活中-------------:，她时刻关心-------------:她-------------:时刻-------------:关心冯-------------:冯凡利，为他排-------------:凡-------------:利-------------:，-------------:为他-------------:排忧解-------------:忧-------------:解难。她深知家庭-------------:难-------------:。-------------:她-------------:深知-------------:家庭的重要性，用心经营着-------------:的重要性-------------:，-------------:用心-------------:经营-------------:着两人的感情，让冯凡利-------------:两人的-------------:感情-------------:，-------------:让-------------:冯-------------:凡-------------:利感受到了家的温暖。她-------------:感受到了-------------:家的-------------:温暖-------------:。-------------:她对待朋友真诚相待，赢得了-------------:对待-------------:朋友-------------:真诚-------------:相-------------:待-------------:，-------------:赢得了大家的信任和喜爱。
+
+陈-------------:大家的-------------:信任-------------:和-------------:喜爱-------------:。
+
+陈思的善良更是让人敬佩-------------:思-------------:的-------------:善良-------------:更是-------------:让人-------------:敬佩。她关爱弱势群体，-------------:。-------------:她-------------:关爱-------------:弱势-------------:群体-------------:，积极参与公益活动，用自己的力量为社会-------------:积极参与-------------:公益活动-------------:，-------------:用自己的-------------:力量-------------:为社会贡献一份爱心。在遇到-------------:贡献-------------:一份-------------:爱心-------------:。-------------:在-------------:遇到困难和挫折时，她从不-------------:困难和-------------:挫折-------------:时-------------:，-------------:她-------------:从不抱怨，而是-------------:抱怨-------------:，-------------:而是积极面对，勇敢地去-------------:积极-------------:面对-------------:，-------------:勇敢-------------:地去战胜困难。她的乐观-------------:战胜-------------:困难-------------:。-------------:她的-------------:乐观和坚强感染着身边的人，-------------:和-------------:坚强-------------:感染-------------:着-------------:身边的人-------------:，成为大家心中的榜样-------------:成为-------------:大家-------------:心中的-------------:榜样。
+
+在人际交往中，陈-------------:。
+
+在-------------:人际-------------:交往-------------:中-------------:，-------------:陈思善于倾听，尊重他人-------------:思-------------:善于-------------:倾听-------------:，-------------:尊重-------------:他人意见。她懂得换位-------------:意见-------------:。-------------:她-------------:懂得-------------:换-------------:位思考，关心-------------:思考-------------:，-------------:关心他人的感受。在与人沟通时，她-------------:他人的-------------:感受-------------:。-------------:在-------------:与人-------------:沟通-------------:时-------------:，-------------:她总能找到合适的表达方式，让人-------------:总能-------------:找到-------------:合适的-------------:表达-------------:方式-------------:，-------------:让人如沐春风。-------------:如这种-------------:沐-------------:春风-------------:。-------------:这种良好的沟通能力，使-------------:良好的-------------:沟通-------------:能力-------------:，-------------:使她在朋友圈中备受尊敬。
+
+此外-------------:她在-------------:朋友圈-------------:中-------------:备受-------------:尊敬-------------:。
+
+此外，陈思还具备丰富的-------------:，-------------:陈-------------:思-------------:还-------------:具备-------------:丰富的兴趣爱好。她热爱运动，-------------:兴趣爱好-------------:。-------------:她-------------:热爱-------------:运动-------------:，积极参加各类体育锻炼，拥有健康的-------------:积极参加-------------:各类-------------:体育锻炼-------------:，-------------:拥有-------------:健康的体魄。她还擅长-------------:体-------------:魄-------------:。-------------:她还-------------:擅长音乐、绘画等艺术领域，-------------:音乐-------------:、-------------:绘画-------------:等-------------:艺术-------------:领域-------------:，为生活增添了许多-------------:为-------------:生活-------------:增添-------------:了许多色彩。这些兴趣爱好让她在-------------:色彩-------------:。-------------:这些-------------:兴趣爱好-------------:让她-------------:在忙碌的生活中找到乐趣-------------:忙碌-------------:的生活-------------:中-------------:找到-------------:乐趣，也让她更加丰富多彩-------------:，-------------:也-------------:让她-------------:更加-------------:丰富多彩。
+
+值得一提的是，陈思对冯-------------:。
+
+值得一提的是-------------:，-------------:陈-------------:思-------------:对-------------:冯凡利的爱意深厚。-------------:凡-------------:利-------------:的爱-------------:意-------------:深厚-------------:。她不仅关心冯凡利的-------------:她-------------:不仅-------------:关心-------------:冯-------------:凡-------------:利的身体健康，还关注他的成长-------------:身体健康-------------:，-------------:还-------------:关注-------------:他的-------------:成长和进步。在冯凡-------------:和-------------:进步-------------:。-------------:在-------------:冯-------------:凡利遇到困难时，她-------------:利-------------:遇到-------------:困难-------------:时-------------:，-------------:她总是第一个站出来支持他，-------------:总是-------------:第一个-------------:站-------------:出来-------------:支持-------------:他-------------:，鼓励他勇敢面对-------------:鼓励-------------:他-------------:勇敢-------------:面对。这种无私的爱，让人感动-------------:。-------------:这种-------------:无私-------------:的爱-------------:，-------------:让人-------------:感动不已-------------:不已。
+
+总之，陈思是一位美丽、有能力、人品高尚-------------:。
+
+总之-------------:，-------------:陈-------------:思-------------:是一位-------------:美丽-------------:、-------------:有能力-------------:、-------------:人品-------------:高尚的女孩。她用自己的魅力赢得了-------------:的女孩-------------:。-------------:她-------------:用自己的-------------:魅力-------------:赢得了冯凡利的心，-------------:冯-------------:凡-------------:利-------------:的心-------------:，也赢得了大家的尊敬和-------------:也-------------:赢得了-------------:大家的-------------:尊敬-------------:和喜爱。我相信，在未来的-------------:喜爱-------------:。-------------:我相信-------------:，-------------:在-------------:未来的日子里，陈-------------:日子里-------------:，-------------:陈思将继续努力-------------:思-------------:将继续-------------:努力，成为更加优秀的自己。-------------:，-------------:成为-------------:更加-------------:优秀的-------------:自己-------------:。而她和冯凡利的爱情-------------:而-------------:她和-------------:冯-------------:凡-------------:利的-------------:爱情，也将愈发美好，成为我们-------------:，-------------:也将-------------:愈发-------------:美好-------------:，-------------:成为-------------:我们学习的典范。
+
+最后，让我们-------------:学习的-------------:典范-------------:。
+
+最后-------------:，-------------:让我们共同祝愿陈思和冯-------------:共同-------------:祝愿-------------:陈-------------:思-------------:和-------------:冯凡利幸福美满，早日-------------:凡-------------:利-------------:幸福-------------:美满-------------:，-------------:早日牵手步入婚姻-------------:牵手-------------:步入-------------:婚姻的殿堂，携手-------------:的-------------:殿堂-------------:，-------------:携手共度人生的每一个美好时光！-------------:共-------------:度-------------:人生的-------------:每一个-------------:美好-------------:时光-------------:！ChatGLM output: {'replies': ['亲爱的同学们，今天我要向大家介绍一位非常优秀、美丽、善良的女孩——冯凡利的女朋友陈思。她不仅拥有令人羡慕的美丽外表，更具备出色的能力、高尚的人品和积极的生活态度。今天，就让我带领大家一起来领略陈思的独特魅力。\n\n首先，让我们谈谈陈思的美丽。她拥有优雅的气质，宛如春天的阳光，温暖人心。她的五官精致，眉眼如画，笑容甜美，让人忍不住想多看一眼。陈思的美丽并非仅仅停留在外表，她的内涵更是让人敬佩。她热爱阅读，知识渊博，谈吐得体，总能给人留下深刻的印象。\n\n其次，陈思在事业上表现出了非凡的能力。她勤奋刻苦，积极进取，无论在学习还是工作中都取得了优异的成绩。她具备较强的组织协调能力和团队协作精神，总能迅速融入各种环境，成为团队中的佼佼者。在陈思的带领下，团队氛围和谐，工作效率显著提高。她用实力证明了自己，赢得了同事和领导的赞誉。\n\n再者，陈思的人品堪称楷模。她诚实守信，待人真诚，关心他人，乐于助人。在日常生活中，她时刻关心冯凡利，为他排忧解难。她深知家庭的重要性，用心经营着两人的感情，让冯凡利感受到了家的温暖。她对待朋友真诚相待，赢得了大家的信任和喜爱。\n\n陈思的善良更是让人敬佩。她关爱弱势群体，积极参与公益活动，用自己的力量为社会贡献一份爱心。在遇到困难和挫折时，她从不抱怨，而是积极面对，勇敢地去战胜困难。她的乐观和坚强感染着身边的人，成为大家心中的榜样。\n\n在人际交往中，陈思善于倾听，尊重他人意见。她懂得换位思考，关心他人的感受。在与人沟通时，她总能找到合适的表达方式，让人如沐春风。这种良好的沟通能力，使她在朋友圈中备受尊敬。\n\n此外，陈思还具备丰富的兴趣爱好。她热爱运动，积极参加各类体育锻炼，拥有健康的体魄。她还擅长音乐、绘画等艺术领域，为生活增添了许多色彩。这些兴趣爱好让她在忙碌的生活中找到乐趣，也让她更加丰富多彩。\n\n值得一提的是，陈思对冯凡利的爱意深厚。她不仅关心冯凡利的身体健康，还关注他的成长和进步。在冯凡利遇到困难时，她总是第一个站出来支持他，鼓励他勇敢面对。这种无私的爱，让人感动不已。\n\n总之，陈思是一位美丽、有能力、人品高尚的女孩。她用自己的魅力赢得了冯凡利的心，也赢得了大家的尊敬和喜爱。我相信，在未来的日子里，陈思将继续努力，成为更加优秀的自己。而她和冯凡利的爱情，也将愈发美好，成为我们学习的典范。\n\n最后，让我们共同祝愿陈思和冯凡利幸福美满，早日牵手步入婚姻的殿堂，携手共度人生的每一个美好时光！'], 'meta': [{'model': 'glm-4-flash', 'index': 0, 'finish_reason': 'stop', 'usage': {}}]}
+-------------:-------------:NoneStream ended.
+WARNING:  WatchFiles detected changes in 'web5.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [83323]
+Process SpawnProcess-2:
+Traceback (most recent call last):
+  File "/Users/alsc/anaconda3/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/Users/alsc/anaconda3/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages/uvicorn/_subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages/uvicorn/server.py", line 61, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alsc/anaconda3/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Users/alsc/anaconda3/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages/uvicorn/server.py", line 68, in serve
+    config.load()
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages/uvicorn/config.py", line 473, in load
+    self.loaded_app = import_from_string(self.app)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages/uvicorn/importer.py", line 24, in import_from_string
+    raise exc from None
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages/uvicorn/importer.py", line 21, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alsc/anaconda3/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/src/v5/web5.py", line 17, in <module>
+    from src.v5.rag import startRag
+ModuleNotFoundError: No module named 'src'
+WARNING:  WatchFiles detected changes in 'web5.py'. Reloading...
+Process SpawnProcess-3:
+Traceback (most recent call last):
+  File "/Users/alsc/anaconda3/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/Users/alsc/anaconda3/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages/uvicorn/_subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages/uvicorn/server.py", line 61, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alsc/anaconda3/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Users/alsc/anaconda3/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages/uvicorn/server.py", line 68, in serve
+    config.load()
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages/uvicorn/config.py", line 473, in load
+    self.loaded_app = import_from_string(self.app)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages/uvicorn/importer.py", line 24, in import_from_string
+    raise exc from None
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages/uvicorn/importer.py", line 21, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alsc/anaconda3/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/src/v5/web5.py", line 17, in <module>
+    from src.v5.rag import startRag
+ModuleNotFoundError: No module named 'src'
+WARNING:  WatchFiles detected changes in 'web5.py'. Reloading...
+Process SpawnProcess-4:
+Traceback (most recent call last):
+  File "/Users/alsc/anaconda3/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/Users/alsc/anaconda3/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages/uvicorn/_subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages/uvicorn/server.py", line 61, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alsc/anaconda3/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Users/alsc/anaconda3/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages/uvicorn/server.py", line 68, in serve
+    config.load()
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages/uvicorn/config.py", line 473, in load
+    self.loaded_app = import_from_string(self.app)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages/uvicorn/importer.py", line 24, in import_from_string
+    raise exc from None
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages/uvicorn/importer.py", line 21, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alsc/anaconda3/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/src/v5/web5.py", line 17, in <module>
+    from src.v5.rag import startRag
+ModuleNotFoundError: No module named 'src'
+WARNING:  WatchFiles detected changes in 'web5.py'. Reloading...
+Process SpawnProcess-5:
+Traceback (most recent call last):
+  File "/Users/alsc/anaconda3/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/Users/alsc/anaconda3/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages/uvicorn/_subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages/uvicorn/server.py", line 61, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alsc/anaconda3/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Users/alsc/anaconda3/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages/uvicorn/server.py", line 68, in serve
+    config.load()
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages/uvicorn/config.py", line 473, in load
+    self.loaded_app = import_from_string(self.app)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages/uvicorn/importer.py", line 24, in import_from_string
+    raise exc from None
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages/uvicorn/importer.py", line 21, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alsc/anaconda3/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/src/v5/web5.py", line 17, in <module>
+    from src.v5.rag import startRag
+ModuleNotFoundError: No module named 'src'
+WARNING:  WatchFiles detected changes in 'web5.py'. Reloading...
+WARNING:  WatchFiles detected changes in 'web5.py'. Reloading...
+Process SpawnProcess-7:
+Traceback (most recent call last):
+  File "/Users/alsc/anaconda3/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/Users/alsc/anaconda3/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages/uvicorn/_subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages/uvicorn/server.py", line 61, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alsc/anaconda3/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Users/alsc/anaconda3/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages/uvicorn/server.py", line 68, in serve
+    config.load()
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages/uvicorn/config.py", line 473, in load
+    self.loaded_app = import_from_string(self.app)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages/uvicorn/importer.py", line 24, in import_from_string
+    raise exc from None
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages/uvicorn/importer.py", line 21, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alsc/anaconda3/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/src/v5/web5.py", line 17, in <module>
+    from src.v5.rag import startRag
+ModuleNotFoundError: No module named 'src'
+WARNING:  WatchFiles detected changes in 'rag.py'. Reloading...
+Process SpawnProcess-8:
+Traceback (most recent call last):
+  File "/Users/alsc/anaconda3/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/Users/alsc/anaconda3/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages/uvicorn/_subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages/uvicorn/server.py", line 61, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alsc/anaconda3/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Users/alsc/anaconda3/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages/uvicorn/server.py", line 68, in serve
+    config.load()
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages/uvicorn/config.py", line 473, in load
+    self.loaded_app = import_from_string(self.app)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages/uvicorn/importer.py", line 24, in import_from_string
+    raise exc from None
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages/uvicorn/importer.py", line 21, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alsc/anaconda3/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/src/v5/web5.py", line 17, in <module>
+    from src.v5.rag import startRag
+ModuleNotFoundError: No module named 'src'
+WARNING:  WatchFiles detected changes in 'web5.py'. Reloading...
+Process SpawnProcess-9:
+Traceback (most recent call last):
+  File "/Users/alsc/anaconda3/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/Users/alsc/anaconda3/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages/uvicorn/_subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages/uvicorn/server.py", line 61, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alsc/anaconda3/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Users/alsc/anaconda3/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages/uvicorn/server.py", line 68, in serve
+    config.load()
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages/uvicorn/config.py", line 473, in load
+    self.loaded_app = import_from_string(self.app)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages/uvicorn/importer.py", line 24, in import_from_string
+    raise exc from None
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages/uvicorn/importer.py", line 21, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alsc/anaconda3/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/src/v5/web5.py", line 17, in <module>
+    from src.v5.rag import startRag
+ModuleNotFoundError: No module named 'src'
+WARNING:  WatchFiles detected changes in 'web5.py'. Reloading...
+未改变前 sys.path: ['/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/src/v5', '/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/bin', '/Users/alsc/anaconda3/lib/python311.zip', '/Users/alsc/anaconda3/lib/python3.11', '/Users/alsc/anaconda3/lib/python3.11/lib-dynload', '/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages']
+project_root: /Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream
+改变后 sys.path: ['/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/src/v5', '/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/bin', '/Users/alsc/anaconda3/lib/python311.zip', '/Users/alsc/anaconda3/lib/python3.11', '/Users/alsc/anaconda3/lib/python3.11/lib-dynload', '/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages', '/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream']
+document size: 3
+All documents were successfully written to the document store.
+INFO:     Started server process [83517]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'web5.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [83517]
+WARNING:  WatchFiles detected changes in 'web5.py'. Reloading...
+未改变前 sys.path: ['/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/src/v5', '/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/bin', '/Users/alsc/anaconda3/lib/python311.zip', '/Users/alsc/anaconda3/lib/python3.11', '/Users/alsc/anaconda3/lib/python3.11/lib-dynload', '/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages']
+project_root: /Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream
+改变后 sys.path: ['/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/src/v5', '/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/bin', '/Users/alsc/anaconda3/lib/python311.zip', '/Users/alsc/anaconda3/lib/python3.11', '/Users/alsc/anaconda3/lib/python3.11/lib-dynload', '/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages', '/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream']
+document size: 3
+All documents were successfully written to the document store.
+INFO:     Started server process [83524]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+query: 用1000字夸一下冯凡利的女朋友陈思，夸的漂亮、能力强、人品好等等，目前还没结婚
+top_k: 3
+rag 流式返回接口
+INFO:     127.0.0.1:56418 - "GET /query-stream?query=%E7%94%A81000%E5%AD%97%E5%A4%B8%E4%B8%80%E4%B8%8B%E5%86%AF%E5%87%A1%E5%88%A9%E7%9A%84%E5%A5%B3%E6%9C%8B%E5%8F%8B%E9%99%88%E6%80%9D%EF%BC%8C%E5%A4%B8%E7%9A%84%E6%BC%82%E4%BA%AE%E3%80%81%E8%83%BD%E5%8A%9B%E5%BC%BA%E3%80%81%E4%BA%BA%E5%93%81%E5%A5%BD%E7%AD%89%E7%AD%89%EF%BC%8C%E7%9B%AE%E5%89%8D%E8%BF%98%E6%B2%A1%E7%BB%93%E5%A9%9A HTTP/1.1" 200 OK
+documents size:  0
+--------- all prompt:----------:
+ 用1000字夸一下冯凡利的女朋友陈思，夸的漂亮、能力强、人品好等等，目前还没结婚
+陈思-------------:陈-------------:思，这位才情出众、-------------:，-------------:这位-------------:才-------------:情-------------:出众-------------:、内外兼修的女子，-------------:内外-------------:兼-------------:修-------------:的-------------:女子无疑是-------------:，-------------:无疑是冯凡利生命中的一-------------:冯-------------:凡-------------:利-------------:生命-------------:中的一抹亮丽-------------:抹-------------:亮-------------:丽色彩。她的美丽，不仅仅是-------------:色彩-------------:。-------------:她的-------------:美丽-------------:，-------------:不仅仅是外表的惊艳，更是心灵-------------:外表-------------:的-------------:惊艳-------------:，-------------:更是-------------:心灵与才华的完美结合，-------------:与-------------:才华-------------:的-------------:完美-------------:结合-------------:，让人不禁为之倾倒-------------:让人-------------:不禁-------------:为之-------------:倾-------------:倒。
+
+首先，陈-------------:。
+
+首先-------------:，-------------:陈思的容貌堪称绝世佳人-------------:思-------------:的-------------:容貌-------------:堪称-------------:绝-------------:世-------------:佳人。她拥有清澈如水的-------------:。-------------:她-------------:拥有-------------:清澈-------------:如-------------:水的明眸，眉宇间-------------:明-------------:眸-------------:，-------------:眉-------------:宇-------------:间透着几分英气与-------------:透-------------:着-------------:几分-------------:英-------------:气-------------:与温婉，宛如春-------------:温-------------:婉-------------:，-------------:宛如-------------:春日里的阳光，温暖而-------------:日-------------:里的-------------:阳光-------------:，-------------:温暖-------------:而明媚。她的肌肤-------------:明媚白-------------:。-------------:她的-------------:肌肤-------------:白皙细腻，如同初雪-------------:皙-------------:细腻-------------:，-------------:如同-------------:初-------------:雪般纯净，每一次微笑都能-------------:般-------------:纯净-------------:，-------------:每一次-------------:微笑-------------:都能绽放出如花-------------:绽放-------------:出-------------:如-------------:花般绚烂的光彩。-------------:般-------------:绚-------------:烂-------------:的光-------------:彩-------------:。她的气质更是独特，既有-------------:她的-------------:气质-------------:更是-------------:独特-------------:，-------------:既有古典女子的婉约，-------------:古典-------------:女-------------:子的-------------:婉-------------:约-------------:，又不失现代女性的独立与自信-------------:又不-------------:失-------------:现代-------------:女性的-------------:独立-------------:与-------------:自信，让人在第一-------------:，-------------:让人-------------:在-------------:第一眼时就心生欢喜-------------:眼-------------:时就-------------:心生-------------:欢喜。
+
+在才华方面，陈思更是-------------:。
+
+在-------------:才华-------------:方面-------------:，-------------:陈-------------:思-------------:更是令人敬佩。她毕业于国内一所-------------:令人-------------:敬佩-------------:。-------------:她-------------:毕业于-------------:国内-------------:一所知名大学-------------:知名-------------:大学，专业知识扎实，成绩优异。她热爱文学-------------:，-------------:专业知识-------------:扎实-------------:，-------------:成绩-------------:优异-------------:。-------------:她-------------:热爱-------------:文学，笔触细腻，无论是散文、-------------:，-------------:笔-------------:触-------------:细腻-------------:，-------------:无论是-------------:散文-------------:、诗歌还是小说，都能驾驭-------------:诗歌-------------:还是-------------:小说-------------:，-------------:都能-------------:驾驭自如，令人-------------:自如-------------:，-------------:令人读后回味无穷。她的-------------:读-------------:后-------------:回味-------------:无穷-------------:。-------------:她的文字里蕴含着丰富的-------------:文字-------------:里-------------:蕴含-------------:着-------------:丰富的情感与哲理，-------------:情感-------------:与-------------:哲理-------------:，总能触动人心最柔软的-------------:总能-------------:触动-------------:人心-------------:最-------------:柔软-------------:的角落。此外，陈思还-------------:角落-------------:。-------------:此外-------------:，-------------:陈-------------:思-------------:还热衷于公益事业，她-------------:热衷-------------:于-------------:公益事业-------------:，-------------:她积极参与志愿者活动，-------------:积极参与-------------:志愿者-------------:活动-------------:，用实际行动传递爱心，展现了她高尚的品格-------------:用实际行动-------------:传递-------------:爱心-------------:，-------------:展现-------------:了她-------------:高尚-------------:的-------------:品格和强烈的社会责任感-------------:和-------------:强烈-------------:的社会-------------:责任感。
+
+陈思不仅美丽与-------------:。
+
+陈-------------:思-------------:不仅-------------:美丽-------------:与才华并存，更有着令人钦-------------:才华-------------:并存-------------:，-------------:更-------------:有着-------------:令人-------------:钦佩的能力。她在工作中表现出-------------:佩-------------:的能力-------------:。-------------:她在-------------:工作中-------------:表现出色，领导能力出众，-------------:色-------------:，-------------:领导-------------:能力-------------:出众总能-------------:，-------------:总能带领团队高效-------------:带领-------------:团队-------------:高效完成任务。她的聪明才智和-------------:完成任务-------------:。-------------:她的-------------:聪明-------------:才-------------:智-------------:和勤奋努力，让她在职场-------------:勤奋-------------:努力-------------:，-------------:让她-------------:在-------------:职场中脱颖而出-------------:中-------------:脱颖而出，成为了众人眼中的佼佼者-------------:，-------------:成为了-------------:众人-------------:眼中的-------------:佼-------------:佼-------------:者。她的能力和成就，无疑-------------:。-------------:她的-------------:能力和-------------:成就-------------:，-------------:无疑为冯凡-------------:为-------------:冯-------------:凡利增光添彩-------------:利-------------:增-------------:光-------------:添-------------:彩，也为他们的未来生活奠定了-------------:，-------------:也为-------------:他们的-------------:未来-------------:生活-------------:奠定了坚实的基础。
+
+在人际关系方面，-------------:坚实的基础-------------:。
+
+在-------------:人际关系-------------:方面-------------:，陈-------------:陈思更是堪称典范。她待人真诚，热情开朗，无论-------------:思-------------:更是-------------:堪称-------------:典范-------------:。-------------:她-------------:待人-------------:真诚-------------:，-------------:热情-------------:开朗-------------:，-------------:无论是对待朋友-------------:是对-------------:待-------------:朋友还是家人，都-------------:还是-------------:家人-------------:，-------------:都充满了关爱与尊重。她-------------:充满了-------------:关爱-------------:与-------------:尊重-------------:。-------------:她善于倾听，能够站在-------------:善于-------------:倾听-------------:，-------------:能够-------------:站在他人的角度-------------:他人的-------------:角度思考问题，因此赢得了周围-------------:思考-------------:问题-------------:，-------------:因此-------------:赢得了-------------:周围人的信任和喜爱。-------------:人的-------------:信任-------------:和-------------:喜爱-------------:。她的善良与宽容，让她-------------:她的-------------:善良-------------:与-------------:宽容-------------:，-------------:让她在人际交往中-------------:在-------------:人际-------------:交往-------------:中如-------------:如鱼得水，建立了良好-------------:鱼-------------:得-------------:水-------------:，-------------:建立了-------------:良好的人际关系网。
+
+陈思-------------:的人际-------------:关系-------------:网-------------:。
+
+陈-------------:思的人品更是无可-------------:的人-------------:品-------------:更是-------------:无可挑剔。她孝顺父母，-------------:挑剔-------------:。-------------:她-------------:孝顺-------------:父母-------------:，尊敬师长，关爱朋友，-------------:尊敬-------------:师长-------------:，-------------:关爱-------------:朋友-------------:，对待爱人更是全心全意。-------------:对待-------------:爱人-------------:更是-------------:全心全-------------:意-------------:。她懂得珍惜眼前的幸福，-------------:她-------------:懂得-------------:珍惜-------------:眼前的-------------:幸福-------------:，懂得付出与奉献-------------:懂得-------------:付出-------------:与-------------:奉献，是一个充满正能量的人。-------------:，-------------:是一个-------------:充满-------------:正能量-------------:的人-------------:。在冯凡利面前，-------------:在-------------:冯-------------:凡-------------:利-------------:面前-------------:，她总是温柔体贴，无-------------:她-------------:总是-------------:温柔-------------:体贴-------------:，-------------:无微不至地关心-------------:微-------------:不-------------:至-------------:地-------------:关心着他的生活与工作，让他感受到了-------------:着他的-------------:生活-------------:与-------------:工作-------------:，-------------:让他-------------:感受到了家的温暖和爱的力量-------------:家的-------------:温暖-------------:和-------------:爱的-------------:力量。
+
+陈思的美丽、才华-------------:。
+
+陈-------------:思-------------:的-------------:美丽-------------:、-------------:才华、能力和人品，-------------:、-------------:能力和-------------:人品-------------:，使得她成为了冯-------------:使得-------------:她-------------:成为了-------------:冯凡利生命中不可或缺的一部分-------------:凡-------------:利-------------:生命中-------------:不可或缺-------------:的一部分。-------------:。她不仅是他的伴侣，-------------:她-------------:不仅是-------------:他的-------------:伴侣-------------:，更是他的知己和良师-------------:更是-------------:他的-------------:知己-------------:和-------------:良-------------:师益友。在-------------:益-------------:友-------------:。-------------:在他们的爱情故事中，陈-------------:他们的-------------:爱情-------------:故事-------------:中-------------:，-------------:陈思用自己的行动诠释了什么是-------------:思-------------:用自己的-------------:行动-------------:诠释-------------:了-------------:什么是真正的爱情，-------------:真正的-------------:爱情-------------:，什么是人生中最美好的陪伴-------------:什么是-------------:人生-------------:中最-------------:美好的-------------:陪伴。
+
+如今，陈思-------------:。
+
+如今-------------:，-------------:陈-------------:思尚未步入婚姻的殿堂，-------------:尚未-------------:步入-------------:婚姻-------------:的-------------:殿堂-------------:，但她的光芒已经照亮了-------------:但-------------:她的-------------:光芒-------------:已经-------------:照亮-------------:了冯凡利的人生。我们-------------:冯-------------:凡-------------:利-------------:的人生-------------:。-------------:我们相信，在-------------:相信-------------:，-------------:在不久-------------:不久的将来，他们会携手步入婚姻的殿堂，共同-------------:的-------------:将来-------------:，-------------:他们会-------------:携手-------------:步入-------------:婚姻-------------:的-------------:殿堂-------------:，-------------:共同谱写人生的新篇章。陈-------------:谱写-------------:人生-------------:的新-------------:篇章-------------:。-------------:陈思，这位美丽、善良-------------:思-------------:，-------------:这位-------------:美丽-------------:、-------------:善良、才华横溢的女子-------------:、-------------:才华-------------:横-------------:溢-------------:的-------------:女子，必将成为冯凡-------------:，-------------:必-------------:将成为-------------:冯-------------:凡利最坚实的后盾，-------------:利-------------:最-------------:坚实的-------------:后-------------:盾-------------:，与他一同迎接未来的-------------:与他-------------:一同-------------:迎接-------------:未来的挑战，共同创造美好的-------------:挑战-------------:，-------------:共同-------------:创造-------------:美好的生活。
+
+在这个充满阳光-------------:生活-------------:。
+
+在这个-------------:充满-------------:阳光的日子里，让我们为陈思-------------:的日子里-------------:，-------------:让我们-------------:为-------------:陈-------------:思送上最真挚的祝福-------------:送上-------------:最-------------:真挚-------------:的-------------:祝福，愿她永远保持-------------:，-------------:愿-------------:她-------------:永远-------------:保持这份美丽与善良，成为-------------:这份-------------:美丽-------------:与-------------:善良-------------:，-------------:成为冯凡利心中永恒的-------------:冯-------------:凡-------------:利-------------:心中-------------:永恒-------------:的璀璨星辰。-------------:璀璨-------------:星辰-------------:。ChatGLM output: {'replies': ['陈思，这位才情出众、内外兼修的女子，无疑是冯凡利生命中的一抹亮丽色彩。她的美丽，不仅仅是外表的惊艳，更是心灵与才华的完美结合，让人不禁为之倾倒。\n\n首先，陈思的容貌堪称绝世佳人。她拥有清澈如水的明眸，眉宇间透着几分英气与温婉，宛如春日里的阳光，温暖而明媚。她的肌肤白皙细腻，如同初雪般纯净，每一次微笑都能绽放出如花般绚烂的光彩。她的气质更是独特，既有古典女子的婉约，又不失现代女性的独立与自信，让人在第一眼时就心生欢喜。\n\n在才华方面，陈思更是令人敬佩。她毕业于国内一所知名大学，专业知识扎实，成绩优异。她热爱文学，笔触细腻，无论是散文、诗歌还是小说，都能驾驭自如，令人读后回味无穷。她的文字里蕴含着丰富的情感与哲理，总能触动人心最柔软的角落。此外，陈思还热衷于公益事业，她积极参与志愿者活动，用实际行动传递爱心，展现了她高尚的品格和强烈的社会责任感。\n\n陈思不仅美丽与才华并存，更有着令人钦佩的能力。她在工作中表现出色，领导能力出众，总能带领团队高效完成任务。她的聪明才智和勤奋努力，让她在职场中脱颖而出，成为了众人眼中的佼佼者。她的能力和成就，无疑为冯凡利增光添彩，也为他们的未来生活奠定了坚实的基础。\n\n在人际关系方面，陈思更是堪称典范。她待人真诚，热情开朗，无论是对待朋友还是家人，都充满了关爱与尊重。她善于倾听，能够站在他人的角度思考问题，因此赢得了周围人的信任和喜爱。她的善良与宽容，让她在人际交往中如鱼得水，建立了良好的人际关系网。\n\n陈思的人品更是无可挑剔。她孝顺父母，尊敬师长，关爱朋友，对待爱人更是全心全意。她懂得珍惜眼前的幸福，懂得付出与奉献，是一个充满正能量的人。在冯凡利面前，她总是温柔体贴，无微不至地关心着他的生活与工作，让他感受到了家的温暖和爱的力量。\n\n陈思的美丽、才华、能力和人品，使得她成为了冯凡利生命中不可或缺的一部分。她不仅是他的伴侣，更是他的知己和良师益友。在他们的爱情故事中，陈思用自己的行动诠释了什么是真正的爱情，什么是人生中最美好的陪伴。\n\n如今，陈思尚未步入婚姻的殿堂，但她的光芒已经照亮了冯凡利的人生。我们相信，在不久的将来，他们会携手步入婚姻的殿堂，共同谱写人生的新篇章。陈思，这位美丽、善良、才华横溢的女子，必将成为冯凡利最坚实的后盾，与他一同迎接未来的挑战，共同创造美好的生活。\n\n在这个充满阳光的日子里，让我们为陈思送上最真挚的祝福，愿她永远保持这份美丽与善良，成为冯凡利心中永恒的璀璨星辰。'], 'meta': [{'model': 'glm-4-flash', 'index': 0, 'finish_reason': 'stop', 'usage': {}}]}
+-------------:-------------:NoneStream ended.
+query: 你是谁
+top_k: 3
+INFO:     127.0.0.1:56446 - "GET /query-no-stream?query=%E4%BD%A0%E6%98%AF%E8%B0%81 HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages/uvicorn/protocols/http/httptools_impl.py", line 435, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages/fastapi/applications.py", line 276, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages/fastapi/routing.py", line 237, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages/fastapi/routing.py", line 163, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/src/v5/web5.py", line 75, in query_stream
+    results = startRag(query=query, top_k=top_k)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: startRag() missing 1 required positional argument: 'stream_queue'
+WARNING:  WatchFiles detected changes in 'rag.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [83524]
+未改变前 sys.path: ['/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/src/v5', '/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/bin', '/Users/alsc/anaconda3/lib/python311.zip', '/Users/alsc/anaconda3/lib/python3.11', '/Users/alsc/anaconda3/lib/python3.11/lib-dynload', '/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages']
+project_root: /Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream
+改变后 sys.path: ['/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/src/v5', '/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/bin', '/Users/alsc/anaconda3/lib/python311.zip', '/Users/alsc/anaconda3/lib/python3.11', '/Users/alsc/anaconda3/lib/python3.11/lib-dynload', '/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages', '/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream']
+document size: 3
+All documents were successfully written to the document store.
+INFO:     Started server process [83590]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'rag.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [83590]
+未改变前 sys.path: ['/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/src/v5', '/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/bin', '/Users/alsc/anaconda3/lib/python311.zip', '/Users/alsc/anaconda3/lib/python3.11', '/Users/alsc/anaconda3/lib/python3.11/lib-dynload', '/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages']
+project_root: /Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream
+改变后 sys.path: ['/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/src/v5', '/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/bin', '/Users/alsc/anaconda3/lib/python311.zip', '/Users/alsc/anaconda3/lib/python3.11', '/Users/alsc/anaconda3/lib/python3.11/lib-dynload', '/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream/venv/lib/python3.11/site-packages', '/Users/alsc/Desktop/code/ai_code/fastapi-haystack-stream']
+document size: 3
+All documents were successfully written to the document store.
+INFO:     Started server process [83593]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+query: 你是谁
+top_k: 3
+documents size:  0
+--------- all prompt:----------:
+ 你是谁
+您好，我是一名高中语文老师。很高兴为您解答高中语文相关的问题，包括文学常识、文言文阅读、现代文阅读、作文指导等方面。请问有什么可以帮助您的？ChatGLM output: {'replies': ['您好，我是一名高中语文老师。很高兴为您解答高中语文相关的问题，包括文学常识、文言文阅读、现代文阅读、作文指导等方面。请问有什么可以帮助您的？'], 'meta': [{'model': 'glm-4-flash', 'index': 0, 'finish_reason': 'stop', 'usage': {}}]}
+INFO:     127.0.0.1:56636 - "GET /query-no-stream?query=%E4%BD%A0%E6%98%AF%E8%B0%81 HTTP/1.1" 200 OK
+query: 你是谁
+top_k: 3
+rag 流式返回接口
+documents size: INFO:     127.0.0.1:58056 - "GET /query-stream?query=%E4%BD%A0%E6%98%AF%E8%B0%81 HTTP/1.1" 200 OK
+ 0
+--------- all prompt:----------:
+ 你是谁
+您好，-------------:您好-------------:，我是人工智能-------------:我是-------------:人工智能助手，专门-------------:助手-------------:，-------------:专门为高中语文学习提供-------------:为-------------:高中-------------:语文-------------:学习-------------:提供帮助。在这里，我可以-------------:帮助-------------:。-------------:在这里-------------:，-------------:我可以解答您关于语文学习-------------:解答-------------:您-------------:关于-------------:语文-------------:学习的问题，包括文学常识、-------------:的问题-------------:，-------------:包括-------------:文学-------------:常识-------------:、阅读理解、作文-------------:阅读-------------:理解-------------:、-------------:作文技巧等。请问有什么可以帮助-------------:技巧-------------:等-------------:。-------------:请问-------------:有什么-------------:可以帮助您的吗？-------------:您的-------------:吗-------------:？ChatGLM output: {'replies': ['您好，我是人工智能助手，专门为高中语文学习提供帮助。在这里，我可以解答您关于语文学习的问题，包括文学常识、阅读理解、作文技巧等。请问有什么可以帮助您的吗？'], 'meta': [{'model': 'glm-4-flash', 'index': 0, 'finish_reason': 'stop', 'usage': {}}]}
+-------------:-------------:NoneStream ended.
