@@ -25,12 +25,14 @@ class ChatGLM(OpenAIGenerator):
         generation_kwargs: Optional[Dict[str, Any]] = None,
         timeout: Optional[float] = None,
         max_retries: Optional[int] = None,
+        stream_queue: Optional[asyncio.Queue] = None,
     ):
-        self.dynamic_callback = haystack_streaming_callback
+        # self.dynamic_callback = haystack_streaming_callback
+        self.stream_queue = stream_queue
         super().__init__(
             api_key=api_key,
             model=model,
-            streaming_callback=self.dynamic_streaming_callback,
+            streaming_callback=self.haystack_stream,
             api_base_url=api_base_url,
             organization=organization,
             system_prompt=system_prompt,
@@ -51,6 +53,11 @@ class ChatGLM(OpenAIGenerator):
         """
         if self.dynamic_callback:
             self.dynamic_callback(chunk)
+            
+    def haystack_stream(chunk: StreamingChunk):
+        print(chunk.content, end="", flush=True)
+        self.stream_queue.put_nowait(chunk.content)
+        pass
 
     @component.output_types(replies=List[str], meta=List[Dict[str, Any]])
     def run(
