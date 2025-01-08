@@ -15,7 +15,6 @@ import asyncio
 import contextlib
 
 class ChatGLM(OpenAIGenerator):
-    stream_queue: Optional[asyncio.Queue]=None
     def __init__(
         self,
         api_key: Secret = Secret.from_env_var("CHATGLM_API_KEY"),
@@ -27,13 +26,11 @@ class ChatGLM(OpenAIGenerator):
         generation_kwargs: Optional[Dict[str, Any]] = None,
         timeout: Optional[float] = None,
         max_retries: Optional[int] = None,
-        stream_queue: Optional[asyncio.Queue]=None,
     ):
-        self.stream_queue = stream_queue
         super().__init__(
             api_key=api_key,
             model=model,
-            streaming_callback=ChatGLM.haystack_stream,
+            streaming_callback=haystack_streaming_callback,
             api_base_url=api_base_url,
             organization=organization,
             system_prompt=system_prompt,
@@ -43,21 +40,16 @@ class ChatGLM(OpenAIGenerator):
         )
         pass
 
-    @staticmethod
-    def haystack_stream(chunk: StreamingChunk):
-        print(chunk.content, end="", flush=True)
-        if ChatGLM.stream_queue:
-            ChatGLM.stream_queue.put_nowait(chunk.content)
-        pass
-    
     @component.output_types(replies=List[str], meta=List[Dict[str, Any]])
     def run(
         self,
         prompt: str,
+        streaming_callback: Optional[Callable[[StreamingChunk], None]] = None,
     ):
         output = OpenAIGenerator.run(
             self=self,
-            prompt=prompt
+            prompt=prompt,
+            streaming_callback=streaming_callback
         )
         print('ChatGLM output:', output)
         return {

@@ -17,8 +17,7 @@ from src.v6.documentToPrompt import DocumentToPrompt
 
 
 class Rag:
-    def __init__(self, 
-                 stream_queue: Optional[asyncio.Queue]=None):
+    def __init__(self):
         
         # 初始化文档存储 并 写入文档
         self.document_store = InMemoryDocumentStore()
@@ -55,12 +54,16 @@ class Rag:
 
 
     def startRag(self, query: str, top_k: int, stream_queue:Optional[asyncio.Queue]=None):
-        # self.stream_queue = stream_queue
-        ChatGLM.stream_queue = stream_queue
+        def haystack_stream(chunk: StreamingChunk):
+            print(chunk.content, end="", flush=True)
+            stream_queue.put_nowait(chunk.content)
+            pass
+    
         result = self.pipeline.run(
             data={
                 "retriever": {"query": query, "top_k": top_k},  # 传递查询和 top_k 参数
-                "converter": {"query": query}
+                "converter": {"query": query},
+                "generator": {'streaming_callback': haystack_stream}
             }
         )
         return result

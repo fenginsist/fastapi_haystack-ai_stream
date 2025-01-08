@@ -44,7 +44,7 @@ async def query_stream(query: str, top_k: int = Query(3)):
     print('top_k:', top_k)
     # 创建独立队列
     stream_queue = asyncio.Queue()
-    rag = Rag(stream_queue=stream_queue)
+    rag = Rag()
     async def event_stream():  # define async generation
         while True:
             content = await stream_queue.get()
@@ -79,7 +79,13 @@ async def query_stream(query: str, top_k: int = Query(3)):
 
 当前情况: 实现了基本的流式输出和非流式输出
 
-当前问题：暂无，完美
+当前问题: 没有, 目前很完美
 
-和上一个版本相比: 
+和上一个版本相比: 解决了多个请求同时请求时, 回答混乱的问题。
+
+解决思路: 徐的代码是采用了构造函数传入回调函数, 导致异步队列 很难在通一个类中共存。因为是回调函数, 导致回调函数 不能是实例函数, 徐采用的类静态函数，使得我的思路一直在类静态函数上使劲。
+
+解决方案: 
+1、将大模型组件 的 回调函数的传入由构造函数改为 从 run 方法传入。
+2、异步队列、回调函数最好在一块儿。以及 回调函数 定义称为函数的内部函数, 然后在pipline的run入口处, 通过大模型组件 赋值给 回调函数。
 '''
