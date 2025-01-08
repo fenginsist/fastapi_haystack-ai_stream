@@ -1,7 +1,0 @@
-nohup: ignoring input
-INFO:     Will watch for changes in these directories: ['/home/feng/ai_code/fastapi_haystack-ai_stream/src/v5']
-INFO:     Uvicorn running on http://0.0.0.0:8005 (Press CTRL+C to quit)
-INFO:     Started reloader process [3741177] using WatchFiles
-INFO:     Started server process [3741187]
-INFO:     Waiting for application startup.
-INFO:     Application startup complete.

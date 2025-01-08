@@ -12,8 +12,10 @@ from typing import Any, Callable, Dict, List, Optional
 
 import asyncio
 
+import contextlib
 
 class ChatGLM(OpenAIGenerator):
+    stream_queue: Optional[asyncio.Queue]=None
     def __init__(
         self,
         api_key: Secret = Secret.from_env_var("CHATGLM_API_KEY"),
@@ -25,12 +27,13 @@ class ChatGLM(OpenAIGenerator):
         generation_kwargs: Optional[Dict[str, Any]] = None,
         timeout: Optional[float] = None,
         max_retries: Optional[int] = None,
+        stream_queue: Optional[asyncio.Queue]=None,
     ):
-        self.dynamic_callback = haystack_streaming_callback
+        self.stream_queue = stream_queue
         super().__init__(
             api_key=api_key,
             model=model,
-            streaming_callback=self.dynamic_streaming_callback,
+            streaming_callback=ChatGLM.haystack_stream,
             api_base_url=api_base_url,
             organization=organization,
             system_prompt=system_prompt,
@@ -39,19 +42,14 @@ class ChatGLM(OpenAIGenerator):
             max_retries=max_retries,
         )
         pass
-    def set_haystack_streaming_callback(self, callback: Callable[[StreamingChunk], None]):
-        """
-        动态设置流式回调函数。
-        """
-        self.dynamic_callback = callback
 
-    def dynamic_streaming_callback(self, chunk: StreamingChunk):
-        """
-        内部流式回调函数，调用动态设置的回调。
-        """
-        if self.dynamic_callback:
-            self.dynamic_callback(chunk)
-
+    @staticmethod
+    def haystack_stream(chunk: StreamingChunk):
+        print(chunk.content, end="", flush=True)
+        if ChatGLM.stream_queue:
+            ChatGLM.stream_queue.put_nowait(chunk.content)
+        pass
+    
     @component.output_types(replies=List[str], meta=List[Dict[str, Any]])
     def run(
         self,

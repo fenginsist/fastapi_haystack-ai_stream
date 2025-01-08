@@ -35,8 +35,8 @@ retriever = InMemoryBM25Retriever(document_store=document_store)
 
 # 自定义转换节点
 
-from src.v4.chatglm import ChatGLM
-from src.v4.documentToPrompt import DocumentToPrompt
+from src.v5.chatglm import ChatGLM
+from src.v5.documentToPrompt import DocumentToPrompt
 openai_generator = ChatGLM(
     system_prompt="你作为高中语文老师，按照要求回答问题即可"
 )

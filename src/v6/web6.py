@@ -11,10 +11,7 @@ from haystack.dataclasses import StreamingChunk
 from typing import Any, Callable, Dict, List, Optional
 
 import asyncio
-
 import os, sys
-
-
 
 print("未改变前 sys.path:", sys.path)
 # 获取当前文件所在目录的绝对路径
@@ -29,7 +26,7 @@ if project_root not in sys.path:
 print("project_root:", project_root)
 print("改变后 sys.path:", sys.path)
 
-from src.v5.rag import startRag # 必须要在上面更新工作目录之后。
+from src.v6.rag import Rag # 必须要在上面更新工作目录之后。
 
 app = FastAPI()
 
@@ -40,15 +37,14 @@ async def hello() -> str:
 
 @app.get("/query-stream")
 async def query_stream(query: str, top_k: int = Query(3)):
-    print('query:', query)
-    print('top_k:', top_k)
-
-    # 创建独立队列
-    stream_queue = asyncio.Queue()
     """
     流式接口：通过 StreamingResponse 返回流式结果
     """
-    print('rag 流式返回接口')
+    print('query:', query)
+    print('top_k:', top_k)
+    # 创建独立队列
+    stream_queue = asyncio.Queue()
+    rag = Rag(stream_queue=stream_queue)
     async def event_stream():  # define async generation
         while True:
             content = await stream_queue.get()
@@ -59,7 +55,7 @@ async def query_stream(query: str, top_k: int = Query(3)):
         yield "data: [END]\n\n"  # sent stop signal
         print("Stream ended.")
     async def produce_data():
-        await asyncio.to_thread(startRag, query, top_k, stream_queue)
+        await asyncio.to_thread(rag.startRag, query, top_k, stream_queue)
         await stream_queue.put(None)  # 结束信号
     asyncio.create_task(produce_data())
     return StreamingResponse(event_stream(), media_type="text/event-stream")
@@ -79,11 +75,11 @@ async def query_stream(query: str, top_k: int = Query(3)):
     return {"answer": answer}
 
 '''
-运行命令: nohup uvicorn web5:app --host 0.0.0.0 --port 8005 --reload > nohup5.out 2>&1 &
+运行命令: nohup uvicorn web6:app --host 0.0.0.0 --port 8006 --reload > nohup6.out 2>&1 &
 
 当前情况: 实现了基本的流式输出和非流式输出
 
-当前问题: 发现老问题并未解决, 当请求A 和 请求B(比请求A晚一些) 同时发起时，请求B会占用请求A，请求A的流式输出就戛然而止，只有请求B在流式输出。而且，请求A的内容会在请求B上输出一小部分。
+当前问题：暂无，完美
 
-和上一个版本相比: 将rag管道的代码抽取成了 rag.py 文件。web文件只有请求的端口。将回调函数整合到了 startRag中。
+和上一个版本相比: 
 '''
